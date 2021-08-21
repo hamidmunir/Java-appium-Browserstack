@@ -1,0 +1,14 @@
+Base/BasePage.java
+ Base.BasePage
+utils/JsonParser.java
+ utils.JsonParser
+Base/BaseTest.java
+ Base.BaseTest
+Base/common.java
+ Base.common
+utils/StringParser.java
+ utils.StringParser
+Base/DriverManager.java
+ Base.DriverManager
+Pages/Loginpage.java
+ Pages.Loginpage

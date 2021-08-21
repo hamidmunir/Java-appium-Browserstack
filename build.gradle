@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+
+repositories {
+    maven {
+        url "https://cloud.experitest.com/repo/"
+    }
+    mavenCentral()
+}
+
+
+dependencies {
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    testImplementation group: 'org.testng', name: 'testng', version: '6.14.3'
+    testImplementation("io.github.bonigarcia:webdrivermanager:4.4.3")
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    implementation group: 'io.appium', name: 'java-client', version: '7.5.1'
+    implementation group: 'org.json', name: 'json', version: '20140107'
+
+
+
+}
+
+
+test {
+    useTestNG() {
+        suites 'src/test/testng.xml'
+        useDefaultListeners = true
+        outputDirectory = file("$projectDir/testngReport")
+
+    }
+    reports.html.setDestination(file("$projectDir/GradleReport"))
+}
+
+

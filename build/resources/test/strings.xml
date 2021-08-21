@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="err_email_verification_failed">The verification has failed, please try again.</string>
+    <string name="location_for_scheduling">NJ</string>
+    <string name="Day">1</string>
+    <string name="Month">January</string>
+    <string name="Year">1990</string>
+    <string name="ReasonForVisit">Test</string>
+    <string name="FilterNotFoundException">Filter option was not displayed</string>
+
+
+</resources>

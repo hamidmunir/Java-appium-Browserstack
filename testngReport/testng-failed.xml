@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+    <parameter name="platform" value="ios"/>
+    <test thread-count="2" parallel="tests" name="scheduleVisit_Primary_Care_Unsigned(failed)" verbose="0">
+        <classes>
+            <class name="Tests.Scheduling">
+                <methods>
+                    <include name="quit"/>
+                    <include name="scheduleVisit_Primary_Care_Unsigned"/>
+                    <include name="beforeTest"/>
+                </methods>
+            </class> <!-- Tests.Scheduling -->
+        </classes>
+    </test> <!-- scheduleVisit_Primary_Care_Unsigned(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
